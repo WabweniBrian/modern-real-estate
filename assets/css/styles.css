@@ -1,0 +1,403 @@
+:root {
+  --primary-color: #2289ff;
+  --secondary-color: #186aa5;
+  --white-color: #fff;
+  --transition: all 0.3s ease-in-out;
+  --text-color: #4c4e55;
+  --very-light-blue: #f5f5fa;
+}
+
+/* General styles */
+* {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c3cfe1;
+  border-radius: 0.5rem;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+  background-color: #fcfdff;
+  color: var(--text-color);
+}
+
+section,
+footer {
+  padding: 0 9%;
+  padding-top: 5rem;
+}
+
+.btn,
+a {
+  font-size: var(--font-13);
+}
+
+.btn:not(.btn-circle) {
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+  transition: var(--transition);
+}
+
+.custom-btn {
+  background: #062d51;
+  color: var(--white-color);
+  box-shadow: 2px 2px 30px #062d517d;
+}
+
+.custom-btn:hover {
+  background-color: #031525;
+}
+
+.btn-primary {
+  color: var(--white-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: #0f63c3;
+}
+
+.btn-rounded {
+  border-radius: 0.8rem !important;
+}
+
+.btn-secondary {
+  background-color: rgba(67, 87, 113, 0.628);
+}
+
+h1 {
+  text-transform: capitalize;
+  color: #062d51;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+  position: relative;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.border {
+  border: 1px solid rgba(33, 124, 244, 0.154);
+}
+
+.border-light {
+  border: 1px solid rgba(33, 124, 244, 0.2);
+}
+
+.card-bg {
+  background-color: var(--very-light-blue);
+}
+
+.footer-bg {
+  background-color: #14395b;
+}
+
+.attribution-bg {
+  background-color: #0b2f50;
+}
+
+/* ------------------------------------CUSTOM STYLES------------------------------------------- */
+.loader-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid var(--primary-color);
+  border-block-start-color: transparent;
+  border-radius: 50%;
+  animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------------Header------------------------------------------------ */
+header.navbar .input-with-icon {
+  border: 2px dotted rgba(110, 124, 146, 0.411);
+  border-radius: 0.8rem;
+  height: 30px;
+}
+
+header.navbar .dot {
+  width: 6px;
+  height: 6px;
+}
+
+header.navbar .navbar-toggle {
+  gap: 1rem;
+}
+
+header.navbar .navbar-toggle .search-icon {
+  display: none;
+}
+
+/* ------------------------------------Hero------------------------------------------------ */
+section.hero .content {
+  background-color: #fff;
+}
+
+/* ------------------------------------Sell/Buy------------------------------------------------ */
+section.sell-buy .sell,
+section.sell-buy .rent {
+  background-color: transparent;
+}
+
+section.sell-buy .sell:hover,
+section.sell-buy .rent:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+section.sell-buy input,
+section.sell-buy select {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: var(--font-13) !important;
+  color: rgb(141, 141, 141);
+}
+
+section.sell-buy label {
+  color: var(--primary-color);
+  font-size: var(--font-14);
+  margin-left: 0.5rem;
+}
+
+section.sell-buy input::placeholder {
+  color: rgb(141, 141, 141);
+  font-size: var(--font-13);
+}
+
+/* ------------------------------------showcase------------------------------------------------ */
+section.showcase .apartment {
+  transition: var(--transition);
+}
+
+section.showcase .apartment:hover {
+  box-shadow: 3px 3px 30px rgba(33, 124, 244, 0.2);
+  transform: scale(1.1);
+}
+
+section.showcase .apartment .check-icon {
+  display: none;
+}
+section.showcase .apartment.active .check-icon {
+  display: block;
+}
+/* ------------------------------------Featured------------------------------------------------ */
+.swiper-pagination-bullet {
+  margin-left: 0.4rem;
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+  margin-top: 3rem;
+}
+/* ------------------------------------Plans------------------------------------------------ */
+section.plans .tab-links .tab-link {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+section.plans .tab-links .tab-link:hover {
+  color: var(--primary-color);
+}
+
+section.plans .tab-links .tab-link.active {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+/* -----------------------------------Buy------------------------------------------------ */
+section.buy .img {
+  background: url("../images/pattern.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+/* -----------------------------------Featured Listings------------------------------------------------ */
+section.featured-listings .box:hover {
+  background-color: var(--primary-color);
+}
+
+section.featured-listings .box:hover .profile-avatar {
+  background-color: var(--white-color);
+}
+
+section.featured-listings .box:hover h1 {
+  color: var(--white-color);
+}
+
+/* -----------------------------------FAQ------------------------------------------------ */
+section.faq .collapse .collapse-body {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+section.faq .collapse.active {
+  border: 1px solid #0b2f50;
+}
+
+section.faq .collapse.active .collapse-header {
+  box-shadow: none;
+}
+
+section.faq .collapse .collapse-header h1 {
+  font-weight: normal;
+  font-size: var(--font-14);
+}
+
+section.faq .collapse.active .collapse-header h1,
+section.faq .collapse .collapse-header:hover h1 {
+  color: var(--primary-color);
+}
+
+section.faq .collapse.active .collapse-header .fa-plus::before {
+  content: "\f068";
+}
+
+/* -----------------------------------Footer------------------------------------------------ */
+footer a:hover {
+  color: rgb(218, 218, 218);
+  margin-left: 0.3rem;
+}
+/*------------------------------------------------ Media Queries--------------------------------------------------------- */
+
+@media screen and (max-width: 1128px) {
+  section.hero .flex-box .hero-content {
+    flex: 1 1 16rem !important;
+  }
+  section.hero .flex-box .hero-image {
+    flex: 1 1 30rem !important;
+  }
+
+  section.hero .flex-box .hero-content .content {
+    top: 30%;
+  }
+
+  section.sell-buy {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .advanced-search {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0.4rem 5%;
+  }
+  .navbar ul.navbar-menu li.nav-item a.nav-link {
+    padding: 0.3rem 0.6rem;
+  }
+
+  section.hero .flex-box .box {
+    flex: 1 1 20rem !important;
+  }
+
+  section.buy .box {
+    flex: 1 1 16rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section,
+  footer {
+    padding: 0 4%;
+    padding-top: 5rem;
+  }
+
+  header.navbar .navbar-toggle .search-icon {
+    display: grid;
+  }
+
+  header.navbar .input-with-icon {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-400px);
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  header.navbar .input-with-icon.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  section.hero .flex-box .hero-content .content {
+    position: relative;
+    margin-right: 0;
+  }
+  section.sell-buy input,
+  section.sell-buy select {
+    margin: 0.5rem auto;
+    border: 1px solid rgb(205, 204, 218) !important;
+  }
+
+  section.buy .video {
+    bottom: 0;
+    left: 50%;
+  }
+
+  section.buy .video .btn {
+    margin-top: -6rem;
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  section {
+    text-align: center;
+  }
+
+  section.hero .content {
+    box-shadow: none;
+  }
+
+  .filter-btns {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  section.buy .btn {
+    margin: 1rem auto;
+  }
+}

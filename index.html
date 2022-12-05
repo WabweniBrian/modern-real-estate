@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My minified  CSS version link - Local Dev -->
+    <!-- <link rel="stylesheet" href="assets/css/simplified.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/WabweniBrian/css-utility-classes/assets/css/simplified.css"
+    />
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Feather Icons link -->
+    <link rel="stylesheet" href="assets/feather-icons/feather.css" />
+    <!-- Font Awesome link - Local Dev -->
+    <!-- <link rel="stylesheet" href="assets/fonts/css/all.css" /> -->
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/Swiper/css/swiper.min.css" />
+    <title>Modern</title>
+  </head>
+  <body>
+    <!-- Back to top button -->
+    <button class="btn btn-circle btn-primary back-to-top-btn">
+      <i class="feather-chevron-up"></i>
+    </button>
+
+    <div class="loader-wrapper"><div class="loader"></div></div>
+    <!-------------------------Header------------------------------------ -->
+    <header class="navbar navbar-fixed navbar-slideIn navbar-shadow">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="" width="100" />
+        </a>
+        <ul class="navbar-menu menu-slide">
+          <li class="nav-item">
+            <a href="" class="nav-link active">home</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">about</a></li>
+          <li class="nav-item"><a href="" class="nav-link">featured</a></li>
+          <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+        </ul>
+        <div class="navbar-toggle">
+          <div class="input-with-icon transparent">
+            <i class="feather-search"></i
+            ><input
+              name=""
+              id=""
+              type="text"
+              class="form-control"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div
+            class="search-icon width-25 height-25 rounded-full grid place-center secondary-bg-soft"
+          >
+            <div class="cursor-pointer">
+              <i class="feather-search text-12"></i>
+            </div>
+          </div>
+          <div
+            class="width-25 height-25 rounded-full grid place-center secondary-bg-soft"
+          >
+            <div class="icon relative cursor-pointer">
+              <i class="feather-bell text-12"></i>
+              <span
+                class="dot absolute top-0 right-0 danger-bg rounded-full"
+              ></span>
+            </div>
+          </div>
+          <button class="btn btn-primary">login</button>
+          <button class="navbar-toggle-icon pl-1 pr-1">
+            <i class="icon fa fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-------------------------//Header------------------------------------ -->
+
+    <!-------------------------Main------------------------------------ -->
+
+    <main>
+      <!-------------------------Hero------------------------------------ -->
+      <section class="hero relative -z-1">
+        <div class="flex-box flex-center-center flex-wrap gap-2">
+          <div class="box hero-content grow-shrink-14">
+            <div
+              class="content shadow-light rounded p-2 -mr-20 absolute top-20 z-50"
+            >
+              <h1 class="text-40 my-2">
+                <span class="primary-color">let's find</span> <br />
+                your dream home...
+              </h1>
+              <p class="text-muted text-14">
+                Building award winning properties across London UK and the whole
+                world
+              </p>
+            </div>
+          </div>
+          <div class="box hero-image grow-shrink-40">
+            <img
+              src="assets/images/hero-image.png"
+              alt=""
+              class="image rounded"
+            />
+          </div>
+        </div>
+      </section>
+      <!-------------------------//Hero------------------------------------ -->
+      <!-------------------------Sell/Buy------------------------------------ -->
+      <section class="sell-buy pt-0 -mt-20 z-10 mr-2">
+        <div class="flex-align-center gap-2 filter-btns">
+          <button class="btn btn-primary btn-rounded">buy</button>
+          <button class="btn sell btn-rounded">sell</button>
+          <button class="btn rent btn-rounded">rent</button>
+        </div>
+        <div
+          class="flex-center-center flex-wrap gap-4 rounded-sm p-2 bg-white shadow mt-2"
+        >
+          <div class="grow-shrink-40">
+            <div class="flex-center-center flex-wrap gap-2">
+              <div class="grow-shrink-12">
+                <label for="city" class="text-muted text-12">City/Street</label>
+                <input
+                  name=""
+                  id=""
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter city"
+                />
+              </div>
+              <div class="grow-shrink-12">
+                <label for="city" class="text-muted text-12"
+                  >Apartment Type</label
+                >
+                <select name="" id="" class="form-control d-block">
+                  <option value="Deluxe Portion">Deluxe Portion</option>
+                  <option value="Full scaled">Full scaled</option>
+                </select>
+              </div>
+              <div class="grow-shrink-12">
+                <label for="city" class="text-muted text-12">Price Range</label>
+                <select name="" id="" class="form-control d-block">
+                  <option value="price">Min price - Max price</option>
+                  <option value="10000 - 50000">$10000 - $50000</option>
+                  <option value="50000 - 80000">$50000 - $80000</option>
+                  <option value="80000 - 150000">$50000 - $150000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="advanced-search grow-shrink-16 flex-align-center gap-2">
+            <a href="#" class="primary-color"
+              ><i class="feather-plus"></i> advanced filter</a
+            >
+            <button class="btn btn-primary">search</button>
+          </div>
+        </div>
+      </section>
+      <!-------------------------//Sell/Buy------------------------------------ -->
+      <!-------------------------showcase------------------------------------ -->
+      <section class="showcase pt-16 pb-4">
+        <div class="text-center">
+          <h1 class="text-25">
+            HI, what do you want for your <br />
+            <span class="primary-color"> dream apartment</span>
+          </h1>
+          <p class="text-muted text-13 my-2">
+            Select an Apartment type below to begin
+          </p>
+        </div>
+        <div class="flex-center-center flex-wrap gap-3">
+          <div
+            class="apartment grow-shrink-14 cursor-pointer rounded shadow p-2 active"
+          >
+            <img
+              src="assets/images/delux.png"
+              alt=""
+              class="image height-150 object-cover"
+            />
+            <div class="flex-center-between mt-1">
+              <p class="text-muted text-14 capitalize">deluxe portion</p>
+              <div class="check-icon">
+                <i class="fa fa-check-circle danger-color text-18"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="apartment grow-shrink-14 cursor-pointer rounded shadow p-2"
+          >
+            <img
+              src="assets/images/studio.png"
+              alt=""
+              class="image height-150 object-cover"
+            />
+            <div class="flex-center-between mt-1">
+              <p class="text-muted text-14 capitalize">deluxe portion</p>
+              <div class="check-icon">
+                <i class="fa fa-check-circle danger-color text-18"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="apartment grow-shrink-14 cursor-pointer rounded shadow p-2"
+          >
+            <img
+              src="assets/images/top_.png"
+              alt=""
+              class="image height-150 object-cover"
+            />
+            <div class="flex-center-between mt-1">
+              <p class="text-muted text-14 capitalize">deluxe portion</p>
+              <div class="check-icon">
+                <i class="fa fa-check-circle danger-color text-18"></i>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="apartment grow-shrink-14 cursor-pointer rounded shadow p-2"
+          >
+            <img
+              src="assets/images/apartment1.png"
+              alt=""
+              class="image height-150 object-cover"
+            />
+            <div class="flex-center-between mt-1">
+              <p class="text-muted text-14 capitalize">deluxe portion</p>
+              <div class="check-icon">
+                <i class="fa fa-check-circle danger-color text-18"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn custom-btn mx-auto my-4">
+          continue <i class="feather-arrow-right"></i>
+        </button>
+      </section>
+      <!-------------------------//showcase------------------------------------ -->
+      <!-------------------------featured------------------------------------ -->
+      <section class="featured">
+        <div class="text-center">
+          <h1 class="text-25">featured apartments</h1>
+          <p class="text-muted text-13 my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            quibusdam suscipit ea modi earum voluptatibus?
+          </p>
+        </div>
+        <div class="relative px-6 mt-4">
+          <div class="swiper-container team-container">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide p-1 rounded-sm overflow-hidden cursor-pointer border relative bg-white"
+              >
+                <img
+                  src="assets/images/Image -1.png"
+                  alt=""
+                  class="image height-150 object-cover rounded-sm"
+                />
+
+                <p class="text-muted text-12">
+                  <i class="fa fa-map-marker-alt danger-color"></i>
+                  Knightsbridge
+                </p>
+                <h2 class="primary-color text-18 my-2">$2,500</h2>
+                <h1 class="text-16 mb-1">apartment london</h1>
+                <p class="text-muted text-13 mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam accusamus saepe, illo natus eos?
+                </p>
+                <div class="flex-center-between gap-2 p-1 card-bg rounded-sm">
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Bedrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img
+                        src="assets/images/bathtub-1.png"
+                        alt=""
+                        width="15"
+                      />
+                    </p>
+                    <p class="text-muted text-12">Bathrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">1776</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Square Ft</p>
+                  </div>
+                </div>
+                <div class="flex-center-center gap-1 p-1 cursor-pointer mt-2">
+                  <i class="far fa-window-maximize"></i>
+                  <i class="fa fa-heart danger-color"></i>
+                  <i class="feather-plus-circle"></i>
+                </div>
+                <button
+                  class="btn btn-secondary btn-rounded absolute top-2 left-2"
+                >
+                  1.2 km away
+                </button>
+                <button
+                  class="btn btn-success btn-rounded absolute top-2 right-2"
+                >
+                  FOR RENT
+                </button>
+              </div>
+              <div
+                class="swiper-slide p-1 rounded-sm overflow-hidden cursor-pointer border relative bg-white"
+              >
+                <img
+                  src="assets/images/Image -2.png"
+                  alt=""
+                  class="image height-150 object-cover rounded-sm"
+                />
+                <p class="text-muted text-12">
+                  <i class="fa fa-map-marker-alt danger-color"></i> Belmont
+                  Gardens, Chicago
+                </p>
+                <h2 class="primary-color text-18 my-2">$30,500</h2>
+                <h1 class="text-16 mb-1">studio apartment</h1>
+                <p class="text-muted text-13 mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam accusamus saepe, illo natus eos?
+                </p>
+                <div class="flex-center-between gap-2 p-1 card-bg rounded-sm">
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">3</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Bedrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img
+                        src="assets/images/bathtub-1.png"
+                        alt=""
+                        width="15"
+                      />
+                    </p>
+                    <p class="text-muted text-12">Bathrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2576</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Square Ft</p>
+                  </div>
+                </div>
+                <div class="flex-center-center gap-1 p-1 cursor-pointer mt-2">
+                  <i class="far fa-window-maximize"></i>
+                  <i class="far fa-heart"></i>
+                  <i class="feather-plus-circle"></i>
+                </div>
+                <button
+                  class="btn btn-secondary btn-rounded absolute top-2 left-2"
+                >
+                  12 km away
+                </button>
+                <button
+                  class="btn btn-success btn-rounded absolute top-2 right-2"
+                >
+                  FOR SALE
+                </button>
+              </div>
+              <div
+                class="swiper-slide p-1 rounded-sm overflow-hidden cursor-pointer border relative bg-white"
+              >
+                <img
+                  src="assets/images/image-3.png"
+                  alt=""
+                  class="image height-150 object-cover rounded-sm"
+                />
+                <p class="text-muted text-12">
+                  <i class="fa fa-map-marker-alt danger-color"></i> Timber Yard,
+                  Birmingham City
+                </p>
+                <h2 class="primary-color text-18 my-2">$379,500</h2>
+                <h1 class="text-16 mb-1">galliard homes apartment</h1>
+                <p class="text-muted text-13 mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam accusamus saepe, illo natus eos?
+                </p>
+                <div class="flex-center-between gap-2 p-1 card-bg rounded-sm">
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">5</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Bedrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img
+                        src="assets/images/bathtub-1.png"
+                        alt=""
+                        width="15"
+                      />
+                    </p>
+                    <p class="text-muted text-12">Bathrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">17436</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Square Ft</p>
+                  </div>
+                </div>
+                <div class="flex-center-center gap-1 p-1 cursor-pointer mt-2">
+                  <i class="far fa-window-maximize"></i>
+                  <i class="far fa-heart"></i>
+                  <i class="feather-plus-circle"></i>
+                </div>
+                <button
+                  class="btn btn-secondary btn-rounded absolute top-2 left-2"
+                >
+                  1.2 km away
+                </button>
+                <button
+                  class="btn btn-success btn-rounded absolute top-2 right-2"
+                >
+                  FOR RENT
+                </button>
+              </div>
+              <div
+                class="swiper-slide p-1 rounded-sm overflow-hidden cursor-pointer border relative bg-white"
+              >
+                <img
+                  src="assets/images/Image -1.png"
+                  alt=""
+                  class="image height-150 object-cover rounded-sm"
+                />
+                <p class="text-muted text-12">
+                  <i class="fa fa-map-marker-alt danger-color"></i>
+                  Knightsbridge
+                </p>
+                <h2 class="primary-color text-18 my-2">$2,500</h2>
+                <h1 class="text-16 mb-1">apartment london</h1>
+                <p class="text-muted text-13 mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam accusamus saepe, illo natus eos?
+                </p>
+                <div class="flex-center-between gap-2 p-1 card-bg rounded-sm">
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Bedrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img
+                        src="assets/images/bathtub-1.png"
+                        alt=""
+                        width="15"
+                      />
+                    </p>
+                    <p class="text-muted text-12">Bathrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">1776</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Square Ft</p>
+                  </div>
+                </div>
+                <div class="flex-center-center gap-1 p-1 cursor-pointer mt-2">
+                  <i class="far fa-window-maximize"></i>
+                  <i class="fa fa-heart danger-color"></i>
+                  <i class="feather-plus-circle"></i>
+                </div>
+
+                <button
+                  class="btn btn-secondary btn-rounded absolute top-2 left-2"
+                >
+                  1.2 km away
+                </button>
+                <button
+                  class="btn btn-success btn-rounded absolute top-2 right-2"
+                >
+                  FOR RENT
+                </button>
+              </div>
+              <div
+                class="swiper-slide p-1 rounded-sm overflow-hidden cursor-pointer border relative bg-white"
+              >
+                <img
+                  src="assets/images/hero-image.png"
+                  alt=""
+                  class="image height-150 object-cover rounded-sm"
+                />
+                <p class="text-muted text-12">
+                  <i class="fa fa-map-marker-alt danger-color"></i>
+                  Knightsbridge
+                </p>
+                <h2 class="primary-color text-18 my-2">$2,500</h2>
+                <h1 class="text-16 mb-1">apartment london</h1>
+                <p class="text-muted text-13 mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam aperiam accusamus saepe, illo natus eos?
+                </p>
+                <div class="flex-center-between gap-2 p-1 card-bg rounded-sm">
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Bedrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">2</span
+                      ><img
+                        src="assets/images/bathtub-1.png"
+                        alt=""
+                        width="15"
+                      />
+                    </p>
+                    <p class="text-muted text-12">Bathrooms</p>
+                  </div>
+
+                  <div>
+                    <p class="text-muted text-12 flex-align-center">
+                      <span class="primary-color mr-1">1776</span
+                      ><img src="assets/images/bed-1.png" alt="" width="15" />
+                    </p>
+                    <p class="text-muted text-12">Square Ft</p>
+                  </div>
+                </div>
+                <div class="flex-center-center gap-1 p-1 cursor-pointer mt-2">
+                  <i class="far fa-window-maximize"></i>
+                  <i class="fa fa-heart danger-color"></i>
+                  <i class="feather-plus-circle"></i>
+                </div>
+                <button
+                  class="btn btn-secondary btn-rounded absolute top-2 left-2"
+                >
+                  1.2 km away
+                </button>
+                <button
+                  class="btn btn-success btn-rounded absolute top-2 right-2"
+                >
+                  FOR RENT
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex-center-center mt-2">
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <button
+            class="btn-circle btn-primary-outlined shadow cursor-pointer prev absolute v-center left-0"
+          >
+            <i class="feather-chevron-left"></i></button
+          ><button
+            class="btn-circle btn-primary-outlined shadow cursor-pointer next absolute v-center right-0"
+          >
+            <i class="feather-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <!-------------------------//featured------------------------------------ -->
+      <!-------------------------Show Case------------------------------------ -->
+      <section class="showcase">
+        <div class="flex-center-center flex-wrap gap-2">
+          <div class="grow-shrink-16">Flex Item 1</div>
+          <div class="grow-shrink-16">Flex Item 2</div>
+        </div>
+      </section>
+      <!-------------------------//Show Case------------------------------------ -->
+      <!-------------------------Features------------------------------------ -->
+      <section class="features">
+        <div class="flex-center-center flex-wrap gap-2">
+          <div class="grow-shrink-16">Flex Item 1</div>
+          <div class="grow-shrink-16">Flex Item 2</div>
+        </div>
+      </section>
+      <!-------------------------//Features------------------------------------ -->
+      <!-------------------------plans------------------------------------ -->
+      <section class="plans card-bg py-4">
+        <h1 class="text-center text-25">apartment plans</h1>
+        <div
+          class="tab-links mt-3 max-w-500 w-100 mx-auto flex-center-center gap-1"
+        >
+          <div class="tab-link flex-1 text-center text-13 capitalize">
+            the studio
+          </div>
+          <div class="tab-link flex-1 text-center text-13 capitalize active">
+            deluxe portion
+          </div>
+          <div class="tab-link flex-1 text-center text-13 capitalize">
+            penthouse
+          </div>
+          <div class="tab-link flex-1 text-center text-13 capitalize">
+            top garden
+          </div>
+          <div class="tab-link flex-1 text-center text-13 capitalize">
+            double height
+          </div>
+        </div>
+        <div
+          class="flex-center-center flex-wrap gap-2 mt-6 p-2 bg-white rounded-sm shadow-light"
+        >
+          <div class="grow-shrink-16 secondary-bg p-2 text-white rounded-sm">
+            <h2 class="text-15">Deluxe Portion</h2>
+            <p class="text-muted text-13 my-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque dolorum soluta facilis iure voluptas blanditiis sit
+              distinctio expedita eos. Quis dicta cupiditate cumque beatae
+              deleniti!
+            </p>
+            <p class="text-muted text-14 capitalize">
+              total area ........................................ 2800 sq.Ft
+            </p>
+            <p class="text-muted text-14 capitalize mt-2">
+              bedroom ........................................... 2800 sq.Ft
+            </p>
+            <p class="text-muted text-14 capitalize mt-2">
+              bathroom .......................................... 2800 sq.Ft
+            </p>
+            <p class="text-muted text-14 capitalize mt-2">
+              smoking/pets ........................................ 2800 sq.Ft
+            </p>
+            <p class="text-muted text-14 capitalize mt-2">
+              lounge ............................................ 2800 sq.Ft
+            </p>
+          </div>
+          <div class="grow-shrink-16">
+            <img src="assets/images/plan.png" alt="" class="w-80" />
+          </div>
+        </div>
+      </section>
+      <!-------------------------//plans------------------------------------ -->
+      <!-------------------------Buy------------------------------------ -->
+      <section class="buy">
+        <div class="flex-center-center flex-wrap gap-10">
+          <div class="box grow-shrink-14">
+            <h1 class="text-25">
+              buy your dream apartment in
+              <span class="primary-color">prime location</span>
+            </h1>
+            <p class="text-muted text-13">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Architecto, voluptatum nostrum repellendus dolorem iste optio.
+            </p>
+            <button class="btn custom-btn my-2">see all apartments</button>
+          </div>
+          <div class="box grow-shrink-30 relative img p-4">
+            <img
+              src="assets/images/apartment1.png"
+              alt=""
+              class="image rounded"
+            />
+            <div
+              class="video absolute bottom-20 left-0 -ml-10 grid place-center"
+            >
+              <div class="width-200 height-150 relative grid place-center">
+                <img
+                  src="assets/images/delux.png"
+                  alt=""
+                  class="w-100 h-100 object-cover"
+                />
+                <button
+                  class="btn btn-circle bg-white absloute v-h-center -mt-14 ml-6"
+                >
+                  <i class="feather-play danger-color text-18"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------//Buy------------------------------------ -->
+      <!-------------------------Featured Listings------------------------------------ -->
+      <section class="featured-listings py-5 card-bg">
+        <div class="text-center">
+          <p class="text-muted text-13 primary-color underline">Apartments</p>
+          <h1 class="text-25 my-2">featured listings</h1>
+        </div>
+        <div class="flex-center-center flex-wrap gap-2">
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/car.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">parking space</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/swimming-pool.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">swimming pool</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/surface1.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">private security</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/stethoscope.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">medical center</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/bookshelf.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">library area</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/sofar.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">king sized beds</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/home.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">smart home</h1>
+            </div>
+          </div>
+          <div
+            class="box width-100 height-100 p-1 rounded-sm bg-white shadow-light flex-center-center cursor-pointer transition-all"
+          >
+            <div class="text-center">
+              <img
+                src="assets/images/XMLID_313_.png"
+                alt=""
+                class="profile-avatar p-1 card-bg"
+              />
+              <h1 class="text-13 mt-1 font-normal">kids playland</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------//Featured Listings------------------------------------ -->
+      <!-------------------------FAQ------------------------------------ -->
+      <section class="faq">
+        <h1 class="text-25 text-center">frequently asked questions</h1>
+        <div class="flex-center-center flex-wrap gap-2 my-4">
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grow-shrink-25">
+            <div class="collapse rounded">
+              <div
+                class="collapse-header shadow-light rounded-sm flex-center-between mb-1 px-3 py-2 cursor-pointer"
+              >
+                <h1 class="text-14 transition-all">
+                  What is the first step of the dream apartment buying process?
+                </h1>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="collapse-body px-3">
+                <p class="text-muted text-13">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat suscipit quam, commodi consequuntur neque, harum
+                  voluptates inventore excepturi, voluptatum vitae magnam
+                  corporis fuga magni ullam?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------//FAQ------------------------------------ -->
+    </main>
+    <!-------------------------//Main------------------------------------ -->
+
+    <!-------------------------Footer------------------------------------ -->
+    <footer class="text-white footer-bg">
+      <div class="flex flex-wrap gap-2">
+        <div class="grow-shrink-10">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="" width="100" />
+          </a>
+          <p class="text-muted text-13">
+            The most beautiful exclusive properties and luxury apartments
+          </p>
+
+          <div class="flex-align-center gap-2 my-2">
+            <button class="btn btn-circle bg-white shadow-md">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="btn btn-circle bg-white shadow-md">
+              <i class="fab fa-instagram"></i>
+            </button>
+            <button class="btn btn-circle bg-white shadow-md">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="btn btn-circle bg-white shadow-md">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="grow-shrink-10 text-11">
+          <h2 class="text-15">Useful Links</h2>
+          <ul>
+            <li class="my-2 text-muted"><a href="#"> about</a></li>
+            <li class="my-2 text-muted"><a href="#">partners</a></li>
+            <li class="my-2 text-muted"><a href="#">contact</a></li>
+          </ul>
+        </div>
+
+        <div class="grow-shrink-10 text-11">
+          <h2 class="text-15">Help?</h2>
+          <ul>
+            <li class="my-2 text-muted"><a href="#"> FAQ</a></li>
+            <li class="my-2 text-muted">
+              <a href="#">terms and conditions</a>
+            </li>
+            <li class="my-2 text-muted"><a href="#">policy</a></li>
+            <li class="my-2 text-muted"><a href="#">privacy</a></li>
+          </ul>
+        </div>
+        <div class="grow-shrink-10 text-11">
+          <h2 class="text-15">Address</h2>
+          <ul>
+            <li class="my-2 text-muted">
+              <a href="#"> 113-115 Old Park Road</a>
+            </li>
+            <li class="my-2 text-muted">
+              <a href="#">SW7 3LE LONDON UNITED KINGDOM</a>
+            </li>
+            <li class="my-2 text-muted">
+              <a href="#">website: www.modern.com</a>
+            </li>
+            <li class="my-2 text-muted"><a href="#">mobile</a></li>
+            <li class="my-2 text-muted"><a href="#">support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="text-center text-14 pt-2 attribution-bg text-white">
+      <p class="text-muted text-13">
+        <a href="#">Terms & conditions | Privacy policy</a>
+      </p>
+      <p>
+        Created By <span class="text-muted underline">Wabweni Brian</span> | All
+        Rights Reserved
+      </p>
+    </div>
+    <!-------------------------//Footer------------------------------------ -->
+    <!-- Swiper -->
+    <script src="assets/Swiper/js/swiper.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
